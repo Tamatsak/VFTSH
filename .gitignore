@@ -1,32 +1,16 @@
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+#include <iostream>
+using namespace std;
+int main () {
+    int x;
+    cin >> x;
+    if (((x%100)/10)==1) {
+        cout << x << " bochek";
+    }
+     else if (x%10==1) {
+        cout << x << " bochka";
+    }
+     else if ((x%10==2)||(x%10==3)||(x%10==4)) {
+        cout << x << " bochki";
+    } else cout << x << " bochek";
+    return 0;
+}
