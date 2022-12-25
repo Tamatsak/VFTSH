@@ -4,13 +4,13 @@ int main () {
     int x;
     cin >> x;
     if (((x%100)/10)==1) {
-        cout << x << " bochek";
+        cout << x << " лет";
     }
      else if (x%10==1) {
-        cout << x << " bochka";
+        cout << x << " год";
     }
      else if ((x%10==2)||(x%10==3)||(x%10==4)) {
-        cout << x << " bochki";
-    } else cout << x << " bochek";
+        cout << x << " года";
+    } else cout << x << " лет";
     return 0;
 }
