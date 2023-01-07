@@ -1,0 +1,21 @@
+program dolbaniy_pascal;
+var maxi,mini,a: integer;
+begin
+a:=1;
+maxi:=0;
+mini:=20000;
+readln(a);
+while (a<>0) do
+begin
+if maxi >= a then
+    maxi := maxi
+  else
+    maxi := a;
+if mini >= a then
+    mini := a
+  else
+    mini := mini;
+readln(a);
+end;
+writeln(maxi-mini);
+end.
